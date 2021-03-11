@@ -8,10 +8,14 @@
 		<title>Dev Skills</title>
 	</head>
 	<body>
-		<a href="/">Home</a>
-		<a href="/devskills">Dev Skills</a>
-		<h1>devskill #<%= devskillNum %></h1>
-		<h3><%= devskill.text %></h3>
-		<h3>Complete: <%= devskill.done ? 'Yes' : 'No' %></h3>
+		<div class="container">
+			<div class="nav">
+				<a href="/">Home</a>
+				<a href="/devskills">Dev Skills</a>
+			</div>
+			<h1>devskill #<%= devskillNum %></h1>
+			<h3><%= devskill.text %></h3>
+			<h3>Complete: <%= devskill.done ? 'Yes' : 'No' %></h3>
+		</div>
 	</body>
 </html>

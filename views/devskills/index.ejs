@@ -8,14 +8,18 @@
 		<title>Dev Skills</title>
 	</head>
 	<body>
-		<h1>These are my Dev Skills</h1>
-		<ul>
-			<% devskills.forEach(function(devskill, idx) { %>
-			<li>
-				<a href="/devskills/<%= idx %>"> <%= devskill.text %> </a>
-				- <%= devskill.done ? 'Done' : 'Not done' %>
-			</li>
-			<% }); %>
-		</ul>
+		<div class="container">
+			<div class="nav">
+				<a>These are my Dev Skills</a>
+			</div>
+			<ul>
+				<% devskills.forEach(function(devskill, idx) { %>
+				<li>
+					<a href="/devskills/<%= idx %>"> <%= devskill.text %> </a>
+					- <%= devskill.done ? 'Done' : 'Not done' %>
+				</li>
+				<% }); %>
+			</ul>
+		</div>
 	</body>
 </html>
