@@ -12,6 +12,7 @@ const app = express();
 app.set("view engine", "ejs");
 
 // Mount Middleware (app.use)
+app.use(express.static("public"));
 
 // Mount Routes
 app.use("/", indexRouter);
