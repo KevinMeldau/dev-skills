@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+:root {
+	--fw-light: 300;
+	--fw-normal: 400;
+	--fw-semi: 500;
+	--fw-bold: 700;
+	--fs-h1: 1.25rem;
+	--fs-h2: 1.75rem;
+	--fs-body: 1rem;
+	--fs-xl: 4rem;
+	--clr-light: #fff;
+	--clr-gray: #989898;
+	--clr-dark: #444;
+	--clr-accent: #d06d6d;
+	--clr-accent-dark: #613131;
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+	line-height: 1.6;
+	background-image: url(../img/mars.jpg);
+	background-position: 40% 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: var(--clr-light);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-attachment: fixed;
+	background-color: black;
+}
+
+h1,
+h2,
+h3 {
+	line-height: 1;
+}
+
+a {
+	color: var(--clr-accent);
+	cursor: pointer;
+	text-decoration: none;
+
+	&:hover {
+		color: var(--clr-accent-dark);
+	}
+}
+
+p,
+a {
+}
